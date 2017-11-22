@@ -20,12 +20,28 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+
+		<meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | New Unity Project 1</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/mann.json", {onProgress: UnityProgress});
+    </script>
 	</head>
 	<body id="top">
 
+ 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
-				<h1><a href="#">Crazy Fun Math Games</a></h1>
+				<h1>
+<a href="#">
+<img src="multiplication.jpg" style="PADDING-TOP: 6px;
+ PADDING-RIGHT: 7px">Crazy Fun Math Games
+</a></h1>
 			</header>
 
 		<!-- Banner -->
@@ -48,21 +64,21 @@
 							<section class="special box">
 								<i class="icon fa-area-chart major"></i>
 								<h3>Pirate Adventure</h3>
-								<p>Our game takes players on a pirate adventure where they must solve math problems to find and sink enemy ships on a battleship-style game board.  Players can also earn coins to unlock powerups to enhance their skills and beat all the levels in the game. </p>
+								<p>Go on a pirate adventure and solve math problems to find and sink enemy ships.  Earn coins to unlock powerups and enhance your skills to beat all the levels in the game. </p>
 							</section>
 						</div>
 						<div class="4u">
 							<section class="special box">
 								<i class="icon fa-refresh major"></i>
 								<h3>Town Squared</h3>
-								<p>You are a superhero fighting math monsters which have taken over town! Chase the monsters away with your superpowers and reclaim your home!</p>
+								<p>As a superhero you must fight math monsters which have taken over town! Chase the monsters away with your superpowers and reclaim your home!</p>
 							</section>
 						</div>
 						<div class="4u">
 							<section class="special box">
 								<i class="icon fa-cog major"></i>
 								<h3>Mathoki Island Adventures</h3>
-								<p>Mathoki Island Adventures is a game that allows player to practice their addition/subtraction, multiplication, and fraction skills while they help the Mathoki creatures settle into their new island home. Along the way, players earn gems that they can use to buy items and customize their Mathoki character. </p>
+								<p>Practice your addition/subtraction, multiplication, and fraction skills while helping the Mathoki creatures settle into their new island home. </p>
 							</section>
 						</div>
 					</div>
@@ -76,7 +92,14 @@
 					<p>Help the Mathoki creatures settle into their new island home!</p>
 				</header>
 				<div class="container">
-								<iframe src="https://dl.dropboxusercontent.com/u/4585058/GAC/Demo/GAC3DDemo/index.html" style="border:0px #000000 none;" name="Game name" scrolling="no" frameborder="1" marginheight="px" marginwidth="320px" height="320px" width="480px"></iframe>
+				<div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">New Unity Project 1</div>
+      </div>
+    </div>
 
 				</div>
 				<br><br>
