@@ -102,7 +102,7 @@
 	}
 
 		hr.major {
-			align-content:center;
+			align-content:middle;
 		}
 
 	blockquote {
@@ -643,7 +643,7 @@
 			font-size: 0.9em;
 			font-weight: 500;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: center;
 		}
 
 		table thead {
