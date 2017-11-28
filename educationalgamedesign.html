@@ -25,8 +25,10 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="mann/Build/UnityLoader.js"></script>
+    <script src="MathokiBuild/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "mann/Build/mann.json", {onProgress: UnityProgress});
+	  var gameInstance2 = UnityLoader.instantiate("mathokigameContainer", "MathokiBuild/temp.json", {onProgress: UnityProgress});
     </script>
 	</head>
 	<body id="top">
@@ -87,7 +89,15 @@
 					<h2>MATHOKI ISLAND ADVENTURES</h2>
 					<p>Help the Mathoki creatures settle into their new island home!</p>
 				</header>
-		
+						<div class="container">
+				<!--<div class="webgl-content"> -->
+     			 <div id="mathokigameContainer" style="width: 1051px; height: 591px"></div>
+     			 <div class="footer">
+       			 <div class="webgl-logo"></div>
+       			 <div class="fullscreen" onclick="gameInstance2.SetFullscreen(1)"></div>				
+
+      </div>
+    </div>
 				</div>
 				<br><br>
 				<header class="major">
