@@ -29,7 +29,8 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "mann/Build/mann.json", {onProgress: UnityProgress});
 	  var gameInstance2 = UnityLoader.instantiate("mathokigameContainer", "MathokiBuild/temp.json", {onProgress: UnityProgress});
-    </script>
+	  var gameInstance3 = UnityLoader.instantiate("mmgameContainer", "mathmonsters/temp.json", {onProgress: UnityProgress});
+	  </script>
 	</head>
 	<body id="top">
 
@@ -104,6 +105,14 @@
 					<h2>TOWN SQUARED</h2>
 					<p>As the town superhero, fight the math monsters which have taken over! </p>
 				</header>
+				
+				<div class="container" align="center">
+				<!--<div class="webgl-content"> -->
+     			 <div id="mmgameContainer" style="width: 1051px; height: 591px"></div>
+     			 <div class="footer">
+       			 <div class="webgl-logo"></div>
+       			 <div class="fullscreen" onclick="gameInstance3.SetFullscreen(1)"></div>		
+				
 				
 				<br><br>
 				<header class="major">
