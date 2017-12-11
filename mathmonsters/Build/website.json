@@ -1,9 +1,9 @@
 {
 "TOTAL_MEMORY": 268435456,
-"dataUrl": "mmbuild demo.data.unityweb",
-"asmCodeUrl": "mmbuild demo.asm.code.unityweb",
-"asmMemoryUrl": "mmbuild demo.asm.memory.unityweb",
-"asmFrameworkUrl": "mmbuild demo.asm.framework.unityweb",
+"dataUrl": "mathmonsters.data.unityweb",
+"asmCodeUrl": "mathmonsters.asm.code.unityweb",
+"asmMemoryUrl": "mathmonsters.asm.memory.unityweb",
+"asmFrameworkUrl": "mathmonsters.asm.framework.unityweb",
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
 "splashScreenStyle": "Dark",
