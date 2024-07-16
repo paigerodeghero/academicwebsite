@@ -57,48 +57,72 @@
     <!-- END HEAD -->
 
     <!-- BODY -->
-    <body id="body" data-spy="scroll" data-target=".header">
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container js_nav-item">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #343a40;
+            padding: 10px 20px;
+        }
 
-                        <!-- Logo -->
-                      <div class="logo">
-                            <a class="logo-wrap" href="#body">
-                              
-                              </a>
-                            </a>
-                        </div>  
-                        <!-- End Logo -->
-                    </div>
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="nav navbar-nav navbar-nav-right">
-                  <ul>
-    <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://paigerodeghero.com/RodegheroCV-3" target="_blank">CV</a></li>
-    <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
-</ul>
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around; /* Adjust alignment as needed */
+        }
+
+        .nav-item {
+            margin-right: 15px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #495057;
+            border-radius: 5px;
+        }
+
+        /* Ensure the link opens in a new tab */
+        a[target="_blank"]::after {
+            content: " (opens in a new tab)";
+            font-size: 0.8em;
+            color: #adb5bd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="https://paigerodeghero.com/RodegheroCV-3" target="_blank">CV</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
 
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
         <!--========== END HEADER ==========-->
 
       
