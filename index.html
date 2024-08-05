@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paige Rodeghero, PhD</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My name is Paige Rodeghero and I am an Assistant Professor of Computer Science at Clemson University. My main research interests include software engineering, productivity, source code comprehension, and computer science education.">
+    <meta name="keywords" content="Paige Rodeghero, HFSE Clemson, Human Factors Software Engineering, Human Factors Software Engineering Clemson, HFSE, Software Engineering Clemson, Clemson, Software Engineering PhD, Software Engineering, PhD Clemson, Clemson University PhD, Source Code, Open Source, Open-Source, Eye-tracking, School of Computing">
+    <meta name="author" content="Paige Rodeghero">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106968744-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-106968744-1');
+    </script>
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <link href="HTML/css/animate.css" rel="stylesheet">
+    <link href="HTML/vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- THEME STYLES -->
+    <link href="HTML/css/layout.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation bar styles */
+        .navbar-custom {
+            background-color: #343a40;
+            padding: 10px 20px;
+        }
+
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+        .nav-item {
+            margin-right: 15px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #34495e;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #ff9234;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        /* Ensure the link opens in a new tab */
+        a[target="_blank"]::after {
+            content: "";
+            font-size: 0.8em;
+            color: #adb5bd;
+        }
+        ol, ul {
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+.navbar-custom {
+    padding: 20px 20px;
+    background: #fff !important;
+    box-shadow: 0 .125rem .25rem 0 rgba(0, 0, 0, .11);
+}
+.full-width {
+    width: 400px;
+    height: 400px;
+    border-radius: 500px;
+    margin: auto;
+}
+.portrait-title {
+    text-align: center;
+    margin-top: 15px;
+}
+.portrait-title h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.portrait-title h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.margin-b-30 {
+    font-size: 20px;
+    line-height: 34px;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 50px;
+}
+.news-section {
+    background: #f7f7f7;
+    padding: 30px 0;
+}
+.eduction-section {
+    padding: 30px 0;
+}
+.fs-16 {
+    font-size: 16px;
+    line-height: 35px;
+}
+.subpage-block {
+    margin-bottom: 30px;
+}
+.block-title h3 {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0;
+}
+.block-title h3:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: -10px;
+    bottom: 0;
+    background-color: #FF8C00;
+}
+.timeline {
+    position: relative;
+    border-left: 1px solid #f5f5f5;
+    padding-bottom: 10px;
+}
+.timeline-event {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.event-date {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.1em;
+    margin: 0 0 3px;
+    background-color: #FF8C00;
+    padding: 5px 8px 5px 20px;
+    margin-left: -20px;
+}
+.event-name {
+    margin: 10px 0 0;
+}
+.event-description {
+    color: #a5a5a5;
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.45em;
+}  
+h4.event-name {
+    font-size: 18px;
+}
+.block-title h3 {
+    font-size: 30px;
+} 
+span.funding-name {
+    font-size: 22px;
+    color: #FF8C00;
+    font-weight: 600;
+}
+span.funding-price {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+.view-list-item {
+    margin-bottom: 30px;
+}
+section.home-section.wg-pages, section.awards.publictions {
+    background: #f7f7f7;
+    padding: 50px 0px;
+}
+h2.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service-info p {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+.service-block {
+    padding: 20px;
+    box-shadow: 0px 0px 6px #c5c5c5;
+    border-radius: 5px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+section.awards {
+    padding: 50px 0;
+}
+.service-block.publictions {
+    height: auto;
+    padding: 15px;
+}
+a.btn-primary {
+    background: #FF8C00;
+    font-size: 18px;
+    padding: 10px 70px;
+    border-radius: 8px;
+}
+.publictions .service-block {
+    height: 300px;
+    background: #fff;
+}
+section.other-info {
+    background-color: #515769;
+    padding: 50px 0;
+}
+p.btn-text {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+.content-lg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1250px;
+    }
+}
+@media only screen and (max-width:767px){
+  nav.navbar.navbar-custom {
+    display: none;
+}
+.full-width {
+    height: auto;
+}
+.grid-3 {
+    display: block;
+    padding: 0 30px;
+}
+.eduction-section {
+    padding: 30px 30px;
+}
+section.home-section.wg-pages, section.awards.publictions {
+    padding: 50px 30px;
+}
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="menu-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#News">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Funding">Funding</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Awards">Awards</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Advising">Advising</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Teaching">Teaching</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Professional">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://paigerodeghero.com/RodegheroCV-3.pdf" target="_blank">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Other content sections here... -->
+    <div id="about">
+        <div class="container content-lg">
+            <div class="row">
+                <div class="col-sm-5 sm-margin-b-60">
+                    <!-- <img src="https://fontmeme.com/permalink/191211/0b70aae033595b14e08ce14d2e4880dd.png" alt="cursive-fonts" border="0">   -->
+                    <img class="full-width img-responsive" src="HTML/img/dr_rodeghero_sm.jpeg" alt="Image">
+                    <div class="portrait-title">
+                        <h2>Paige Rodeghero, PhD</h2>
+                        <h3>Clemson University School of Computing</h3>
+                        <h3>
+                            316 McAdams Hall
+                            Clemson, SC 29634
+                        </h3> 
+                        <h3>Email: <a href="mailto:prodegh@clemson.edu">rodeghero@clemson.edu</a></h3>
+                        <a class="btn-primary" href="#">Dowload CV</a>   
+                      </div>
+                </div>
+                <div class="col-sm-7">
+                    <div class="section-seperator margin-b-50">
+                        <div class="margin-b-50">
+                            <div class="margin-b-30">
+                                <br> <br> 
+                                <h2>About Me</h2>
+                                I am an <a href="https://www.clemson.edu/cecas/departments/computing/" class="external"><font color="#FF8C00"><b>Assistant Professor of Computer Science at Clemson University</b></font></a> and previously a <a href="https://www.microsoft.com/en-us/research/group/saintes-group/" class="external"><font color="#FF8C00"><b>Visiting/Contracting Researcher at Microsoft Research</b></font></a>. In addition, I hold an affiliation in Clemson’s <a href="https://www.clemson.edu/centers-institutes/hfi/index.html" class="external"><font color="#FF8C00"><b>Human Factors Institute</b></font></a>. I obtained my PhD in Computer Science and Engineering from the <a href="www.nd.edu" class="external"><font color="#FF8C00"><b>University of Notre Dame</b></font></a> under the direction of <a href="https://www3.nd.edu/~cmc/" class="external"><font color="#FF8C00"><b>Collin McMillan</b></font></a>. My main research interest is in <b><i>software engineering, focused on productivity, remote work, virtual reality (VR), onboarding, source code comprehension, computer science education, and software engineering for autism.</i></b> I've also worked in industry as a software engineer for a startup company and at multiple medium sized companies.
+                                <br><br>
+                                I direct the <a href="http://clemsonhfse.com/" class="external"><font color="#FF8C00"><b>Human Factors Software Engineering (HFSE)</b></font></a> research team at Clemson.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="news-section" id="News">
+          <div class="container content-lg">
+            <div class="row">
+                <div class="grid-3">
+                   <div>
+                    <h2>News</h2>
+                   </div>
+                   <div class="fs-16">
+                    <ul>
+                      <li class="funding-price">CSCW paper accepted</li>
+                      <li class="funding-price">NSF DRL: ITEST Grant Awarded $1,080,688</li>
+                      <li class="funding-price">Tiger Grant Funded</li>
+                      <li class="funding-price">Invited to Dagstuhl (The Human Factors Impact of Programming Error Messages)</li>
+                      <li class="funding-price">Invited to speak at Emory University 2021</li>
+                      <li class="funding-price">Invited to present at the Microsoft Research Summit 2021</li>
+                      <li class="funding-price">Our paper received an ACM SIGSOFT Distinguished Paper Award at ICSE 2021!</li>
+                      <li class="funding-price">"An Ecologically-valid Monitoring of Everyday Function App" Prisma Health seed was funded.</li>
+                    </ul>
+                    </div>
+                   <div class="fs-16">
+                    <ul>
+                      <li class="funding-price">Our paper won the Best Paper Award at SIGCSE 2021! </li>
+                      <li class="funding-price">Our paper won the Best Paper Award at HAI 2020!</li>
+                      <li class="funding-price">Invited to the Accessible Computer Science Education Fall Workshop at Microsoft</li>
+                      <li class="funding-price">Robert H. Brooks Sports Science Institute (RHBSSI) Grant Funded</li>
+                      <li class="funding-price">Joining Microsoft Research (MSR) as a Visiting Researcher May 2020 </li>
+                      <li class="funding-price">Developed and leading SE for Autism Bootcamp Summer 2020 @ Clemson University</li>
+                      <li class="funding-price">Invited to the International Conference on Software Engineering (ICSE) 2021 Program Committee</li>
+                      <li class="funding-price">Attended Dagstuhl (BOTse: Bots in Software Engineering) </li>
+                      </ul>
+                   </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="eduction-section" id="Education">
+        <div class="container content-lg">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">May 2018</h5>
+                      <h4 class="event-name"><a href="https://www.nd.edu/">University of Notre Dame</a></h4>
+                      <span class="event-description">Notre Dame, IN</span>
+                      <p>PhD, Computer Science and Engineering</p>
+                      <p>• Area of Study: Software Engineering</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                        <h5 class="event-date">August 2017</h5>
+                        <h4 class="event-name"><a href="https://www.nd.edu/">University of Notre Dame</a></h4>
+                        <span class="event-description">Notre Dame, IN</span>
+                        <p>M.S., Computer Science and Engineering</p>
+                      </div>
+                      <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">May 2013</h5>
+                      <h4 class="event-name"><a href="http://cms.bsu.edu/">Ball State University</a></h4>
+                      <span class="event-description">Muncie, IN</span>
+                      <p>B.S., Computer Science,</p>
+                      <p>• Minor: Dance Performance</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Professional Experience</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">August 2018 - Present</h5>
+                      <h4 class="event-name"><a href="https://www.clemson.edu/">Clemson University, Clemson,</a>South Carolina</h4>
+                      <p>Assistant Professor</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">May 2020 - November 2020</h5>
+                      <h4 class="event-name"><a href="https://www.microsoft.com/en-us/research/">Microsoft, </a>Redmond, Washington (Remote)</h4>
+                      <p>Visiting Researcher/Consulting Researcher</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">June 2013 - May 2018</h5>
+                      <h4 class="event-name"><a href="http://www.nd.edu/">University of Notre Dame, Notre Dame, Indiana</a></h4>
+                      <p>Software Engineering Research Assistant</p>
+                    </div>
+                    <div class="timeline-event te-primary">
+                        <h5 class="event-date">April 2016 - July 2016</h5>
+                        <h4 class="event-name"><a href="http://www.abb.com/">ABB Corporate Research Center, Raleigh, North Carolina</a></h4>
+                        <p>Software Engineering Research Internship</p>
+                    </div>
+                    <div class="timeline-event te-primary">
+                        <h5 class="event-date">February 2016 - March 2016</h5>
+                        <h4 class="event-name"><a href="http://www.aldensys.com/">Alden Systems, Inc., Birmingham, Alabama</a></h4>
+                        <p>Software Engineering Internship</p>
+                    </div>
+                    <div class="timeline-event te-primary">
+                        <h5 class="event-date">June 2012 - July 2012</h5>
+                        <h4 class="event-name"><a href="https://www.ua.edu/">University of Alabama, Tuscaloosa, Alabama</a></h4>
+                        <p>Research Experiences for Undergraduates (REU)</p>
+                    </div>
+                    <div class="timeline-event te-primary">
+                        <h5 class="event-date">May 2010 - May 2013</h5>
+                        <h4 class="event-name"><a href="http://www.vizicourseware.com/">IDEE/Vizi Courseware, LLC, Muncie, Indiana</a></h4>
+                        <p>Software Developer</p>
+                    </div>
+                    <div class="timeline-event te-primary">
+                        <h5 class="event-date">August 2012 - May 2013</h5>
+                        <h4 class="event-name"><a href="http://cms.bsu.edu/">Ball State University, Muncie, Indiana</a></h4>
+                        <p>Software Developer</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+        </div>
+
+    </div>
+
+
+    <section id="Funding" class="home-section wg-pages   ">
+        <div class="container">
+          <div class="row">
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Funding</h1>
+      </div>
+      <div class="col-12 col-lg-8">
+    <div class="view-list-item">
+     <span class="funding-name">NSF DRL: ITEST: Preparing High School Students with Autism for the Future of Remote
+        Software Development Work, 06/22-05/26,</span>
+      <div class="article-metadata" itemprop="author">
+    <span class="funding-price"> (PI), $1,080,688    </span>
+      </div> 
+    </div>  
+
+    <div class="view-list-item">
+        <span class="funding-name">Clemson University Tiger Grant “Can a video game improve learner’s ability to successfully perform ultrasound-guided IV placement?”,</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> (PI), $5,000 </span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">“An Ecologically-valid Monitoring of Everyday Function App” Prisma Health 2021 Seed
+            (Co-I)</span>
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Robert H. Brooks Sports Science Institute (RHBSSI) Grant "Sideline Concussion Screening in Eye-Tracked Augmented Reality"</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> (Co-PI) $45,780 </span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Notre Dame Eli J. and Helen Shaheen Graduate School Award 2018</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> $5000</span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">National Science Foundation Travel Award to attend ICSE 2016</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> $652</span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">SIGSOFT CAPS Travel Award to ICSE 2015 </span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> $1200</span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">National Science Foundation Travel Award to attend NasBase 2015</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> $660</span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">NNotre Dame CSE GAANN Teaching Fellow</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> $120,000</span>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">CRA Travel Grant to attend CRA Grad Cohort 2014</span>
+         <div class="article-metadata" itemprop="author">
+       <span class="funding-price"> $756.12</span>
+         </div> 
+       </div>
+
+      </div>
+    </div>
+    
+        </div>
+      </section>
+
+
+      <section class="awards" id="Awards">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Awards & Honors</h2>
+                </div>
+                <div class="col-sm-4 col-md-4 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <p>ACM SIGSOFT Distinguished Paper Award ICSE 2021</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <p>Best Paper Award SIGCSE Experience Reports and Tools 2021</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <p>Best Paper Award HAI 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>ACM SIGSOFT Distinguished Paper Award ICSE 2014</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Outstanding Graduate Student Teaching Awards 2014 $100</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-4 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Computer Science and Engineering Teaching Assistant Award 2013 $100</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+      </section>
+
+
+      <section class="awards publictions" id="Publications">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title">Selected Publications</h2>
+                </div>
+                <div class="col-sm-4 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <p>Moster, M., Kokinda, E., Boyer, D. M., <b>Rodeghero, P.</b> “Experiences with Summer Camp
+                        Communication via Discord”, to appear in Proc. of the 46th IEEE/ACM International
+                        Conference on Software Engineering - Software Engineering Education and Training
+                        Track (ICSE SEET ‘24), Lisbon, Portugal, April 14-20, 2024.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <p>Moster, M., Boyer, D. M., <b>Rodeghero, P.</b>, "WIP: Exploring how an Unofficial Discord
+                        Server Supports Undergraduate Learning in Computer Science", presented at 2024
+                        ASEE Annual Conference & Exposition, Portland, Oregon, USA, June 23-26, 2024.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-3 subpage-block">
+                  <div class="service-block"> 
+                    <div class="service-info">
+                      <p>Kokinda, E., Moster, M., <b>Rodeghero, P.,</b> Boyer, D. M. (2024, May), “Informal Learning
+                        Opportunities - Neurodiversity, Self-Efficacy, and Motivation for Programming Inter-
+                        est”, to be presented at International Conference on Computer Supported Education
+                        2024 (CSEDU 24), Angers, France.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Kokinda, E., <b>Rodeghero, P.</b>, Boyer, D. M. (2024, June), “WIP: Streamer and Viewer
+                          Interactions in Software and Game Development Live Streams“, to be presented at 2024
+                          ASEE Annual Conference & Exposition, Portland, Oregon.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Kokinda, E., Moster, M., <b>Rodeghero, P.</b>, Boyer, D. M. (2024, June), “Compiling Re-
+                          silience: A Study on First-Generation Women Pursuing Computing Degrees”, to be
+                          presented at 2024 ASEE Annual Conference & Exposition, Portland, Oregon.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Kokinda, E., <b>Rodeghero, P.</b> “Streaming Software Development: Accountability, Commu-
+                          nity, and Learning”, The Journal of Systems and Software (2023).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Kokinda, E., Moster, M., Dominic, J., <b>Rodeghero, P.</b> “Under the Bridge: Trolling and the
+                          Challenges of Recruiting Software Developers for Empirical Research Studies”, Proc.
+                          of the 45th IEEE/ACM International Conference on Software Engineering - New Ideas
+                          and Emerging Results Track (ICSE NIER ‘23), Melbourne, Australia, 17-19 May 2023.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>*Moster, M., *Kokinda, E., <b>Rodeghero, P.</b>, McNeese, N. “Both Sides of the Story: Chang-
+                          ing the “pre-existing culture of dread” surrounding student teamwork in breakout rooms”,
+                          Proc. of the 2023 ACM on Human Computer Interaction, Computer Supported Coop-
+                          erative Work (CSCW ‘23), Minneapolis, MN, USA, October 13-18, 2023.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Moster, M., , Kokinda, E., Re, M., Dominic, J., Lehmann, J., Begel, A., <b>Rodeghero,
+                          P.</b> “ ‘Can You Help Me?’ An Experience Report of Teamwork in a Game Coding
+                          Camp for Autistic High School Students”, in Proc. of the 44th IEEE/ACM International
+                          Conference on Software Engineering - Software Engineering Education and Training
+                          Track (ICSE SEET ‘22), Pittsburgh, PA, USA, May 21-29, 2022.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Moster, M., Chandra, A., Chu, C., Liu, W., <b>Rodeghero, P.</b> "In the Zone: An Analysis of
+                          the Music Practices of Remote Software Developers", in Proc. of the 2022 ACM/IEEE
+                          International Symposium on Empirical Software Engineering and Measurement (ESEM
+                          ’22), Helsinki, Finland, September 19-23, 2022.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Moster, M. "Investigating Communication Tools in SE Capstone Courses", in Proc. of
+                          the 2022 ACM Conference on International Computing Education Research V.2 (ICER
+                          ’22), Lugano and Virtual Event, Switzerland, August 7–11, 2022.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Moster, M., Begel, A., Boyer, D. M., <b>Rodeghero, P.</b> "A Longitudinal Study Exploring
+                          Autistic High Schoolers’ Interests in CS", 4th Annual Autism at Work Research Work-
+                          shop (AAWRW ’22), Virtual, May 16-18, 2022.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>, Zimmermann, T., Houck, B., Ford, D. "Please Turn Your Cameras On:
+                          Remote Onboarding of Software Developers during a Pandemic" in Proc. of the 43rd
+                          IEEE/ACM International Conferences on Software Engineering - Software Engineering
+                          in Practice (ICSE SEIP’21), Madrid, Spain, May 23-29, 2021</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Moster, M., Ford, D., <b>Rodeghero, P.</b> "’Is My Mic On?’ Preparing SE Students for
+                          Collaborative Remote Work and Hybrid Team Communication", in Proc. of the 43rd
+                          IEEE/ACM International Conference on Software Engineering - Joint Software Engi-
+                          neering Education and Training Track (ICSE JSEET’21), Madrid, Spain, May 23-29,
+                          2021.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Miller, C., <b>Rodeghero, P.</b>, Storey, M., Ford, D., Zimmermann, T. “How Was Your Week-
+                          end?” Software Development Teams Working From Home During COVID-19", in Proc.
+                          of the 43rd IEEE/ACM International Conference on Software Engineering (ICSE’21),
+                          Madrid (virtual), Spain, May 25-28, 2021.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Begel, A., Dominic, J., Phillis, C., Beeson, T., <b>Rodeghero, P.</b> “How a Remote Video
+                          Game Coding Camp Improved Autistic College Students’ Self-Efficacy in Communi-
+                          cation”, in Proc. of the 51st Technical Symposium on Computer Science Education
+                          (SIGCSE’21), Toronto, Canada, March 13-20, 2021. <b style="color:red;">Best Paper Award</b></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Dominic, J., Tubre, B., Kunkel, D., <b>Rodeghero, P.</b> "The human experience of compre-
+                          hending source code in virtual reality", Empirical Software Engineering, Volume 27,
+                          article number 173, 2022.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Huff Jr, E. W., Boateng, K., Moster, M., <b>Rodeghero, P.</b>, Brinkley, J. “Exploring the Per-
+                          spectives of Teachers of the Visually Impaired Regarding Accessible K12 Computing
+                          Education”, in Proc. of the 51st Technical Symposium on Computer Science Education
+                          (SIGCSE’21), Toronto, Canada, March 13-20, 2021.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Tubre, B., <b>Rodeghero, P.</b> "Exploring the Challenges of Cloud Migrations During a Global
+                          Pandemic", in Proc. of the IEEE International Conference on Software Maintenance
+                          and Evolution (ICSME’20 Late Breaking Ideas), Adelaide, Australia, Sept. 27-Oct. 3,
+                          2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Dominic, J., Tubre, B., Ritter, C., Houser, J., Smith, C., <b>Rodeghero, P.</b> "Remote Pair
+                          Programming in Virtual Reality", in Proc. of the IEEE International Conference on
+                          Software Maintenance and Evolution (ICSME’20), Adelaide, Australia, Sept. 27-Oct.
+                          3, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Anderson, J., Steinmacher, I., <b>Rodeghero, P.</b> "Assessing the Characteristics of FOSS Con-
+                          tributions in Network Automation Projects", in Proc. of the IEEE International Confer-
+                          ence on Software Maintenance and Evolution (ICSME’20), Adelaide, Australia, Sept.
+                          27-Oct. 3, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Flathmann, C., Schelble, B., Tubre, B., McNeese, N., <b>Rodeghero, P.</b> "Invoking Princi-
+                          ples of Groupware to Develop and Evaluate Present and Future Human-Agent Teams",
+                          in Proc. of the 8th International Conference on Human-Agent Interaction (HAI’20),
+                          Sydney (online), Australia, Nov. 10-13, 2020. <b style="red;">Best Paper Award</b></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Huff Jr, E. W., Boateng, K., Moster, M., <b>Rodeghero, P</b>., Brinkley, J. "Examining the
+                          Work Experience of Programmers with Visual Impairments", in Proc. of the 36th In-
+                          ternational Conference on Software Maintenance and Evolution (ICSME NIER’20),
+                          Adelaide, Australia, Sept. 27-Oct. 3, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>, Hernandez, T. "Empowering and Supporting Remote Software Develop-
+                          ment Team Members through a Culture of Allyship", in Proc. of the New Future of
+                          Work Symposium (New Future of Work), Microsoft Research, Virtual, August 3-5,
+                          2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Dominic, J., Tubre, B., Houser, J., Ritter, C., Kunkel, D., <b>Rodeghero, P.</b> "Program Com-
+                          prehension in Virtual Reality", in Proc. of the International Conference on Program
+                          Comprehension (ICPC’20 ERA), Seoul, Korea, May 23-24, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Dominic, J., Ritter, C., <b>Rodeghero, P</b>. "Onboarding Bot for Newcomers to Software En-
+                          gineering", in Proc. of the International Conference on Software and Systems Process
+                          (ICSSP’20), Seoul, Korea, May 23-24, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Dominic, J., Ritter, C., <b>Rodeghero, P</b>. "Onboarding Bot for Newcomers to Software En-
+                          gineering", in Proc. of the International Conference on Software and Systems Process
+                          (ICSSP’20), Seoul, Korea, May 23-24, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Shaydulin, R., Thomas, C., <b>Rodeghero, P</b>. "Making Quantum Computing Open: Lessons
+                          from Open-Source Projects", in Proc. of the 1st International Workshop on Quantum
+                          Software Engineering (Q-SE’20), Seoul, Korea, May 24-26, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P</b>. "An Exploratory Field Study of Programmer Assistance-Seeking during
+                          Software Development", in Proc. of the 13th International Workshop on Cooperative
+                          and Human Aspects of Software Engineering (CHASE’20), Seoul, Korea, May 24,
+                          2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Dominic, J., Houser, J., Steinmacher, I., Ritter, C., <b>Rodeghero, P</b>. "Conversational Bot
+                          for Newcomers Onboarding to Open Source Projects", in Proc. of the 2nd International
+                          Workshop on Bots in Software Engineering (BotSE’20), Seoul, Korea, May 24, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Canonico, L., Vakeel, V., Dominic, J., <b>Rodeghero, P.</b>, McNeese, N. "Human-AI Partner-
+                          ships for Chaos Engineering ", in Proc. of the 8th International Workshop on Realizing
+                          Artificial Intelligence Synergies in Software Engineering (RAISE’20), Seoul, Korea,
+                          May 23, 2020.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Milewicz, P., Pinto, P., <b>Rodeghero, P.</b> " Characterizing the Roles of Contributors in Open-
+                          source Scientific Software Projects", in Proc. of the 52th Mining Software Repositories
+                          (MSR’19), Montreal, QC, Canada, May 26-27, 2019.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Milewicz, P., <b>Rodeghero, P</b>., "Position Paper: Towards Usability as a First-Class Qual-
+                          ity of Scientific Software", in Proc. of the 2019 International Workshop on Software
+                          Engineering for Science (SE4SCIENCE’19), Montreal, QC, Canada, May 28, 2019.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Wood, A., <b>Rodeghero, P.</b>, Armaly, A., McMillan, C., "Detecting Speech Act Types in
+                          Developer Question/Answer Conversations During Bug Repair", in Proc. of the 26th
+                          ACM Symposium on the Foundations of Software Engineering (ESEC/FSE’18), Lake
+                          Buena Vista, Florida, USA, Nov. 4-9, 2018.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Armaly, A., <b>Rodeghero, P.</b>, McMillan, C., “AudioHighlight: Code Skimming for Blind
+                          Programmers”, in Proc. of the 34th IEEE International Conference on Software Main-
+                          tenance and Evolution (ICSME’18), Madrid, Spain, Sept. 23-29, 2018.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P</b>., Jiang, S., Armaly, A., McMillan, C., “Detecting User Story Information
+                          in Developer-Client Conversations to Generate Extractive Summaries”, in Proc. of the
+                          39th ACM/IEEE International Conference on Software Engineering (ICSE’17), Buenos
+                          Aires, Argentina, May 20-28, 2017 (17% acceptance rate).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p>Armaly, A., <b>Rodeghero, P.</b>, McMillan, C., “A Comparison of Program Comprehension
+                          Strategies by Blind and Sighted Programmers”, in Transactions on Software Engineer-
+                          ing (TSE), accepted July 5, 2017. Journal First.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P</b>., “Behavior-Informed Algorithms for Automatic Documentation Genera-
+                          tion”, in the Proc. of the 33rd IEEE International Conference on Software Maintenance
+                          and Evolution (ICSME).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>, McMillan, C., Shirley, A. “API Usage in Descriptions of Source Code
+                          Functionality”, The International Workshop on API Usage and Evolution. Co-located
+                          with ICSE’17.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>Huo, D., Ding, T., McMillan, C., Gethers, M., “An Empirical Study on
+                          How Expert Knowledge Affects Bug Reports”, Journal of Software: Evolution and Pro-
+                          cess. <b style="color:red;">Special issue containing the best papers</b> from the 30th International Conference
+                          on Software Maintenance and Evolution. Extensive revision and expansion of the con-
+                          ference paper.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>, “Discovering Important Source Code Terms.” The Proceedings 38th
+                          IEEE/ACM International Conference on Software Engineering (ICSE’16). ACM Stu-
+                          dent Research Competition, Austin, Texas, USA.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>McMillan, C., “An Empirical Study on the Patterns of Eye Movement dur-
+                          ing Summarization Tasks”, in Proc. of the 9th International Symposium on Empirical
+                          Software Engineering and Measurement (ESEM’15), Beijing, China, Oct. 22-23, 2015,
+                          10 pages.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>, Liu, C., McBurney, P. W., McMillan, C., “An Eye-Tracking Study of Java
+                          Programmers and Application to Source Code Summarization”, in IEEE Transactions
+                          on Software Engineering (TSE).</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-3 subpage-block">
+                    <div class="service-block"> 
+                      <div class="service-info">
+                        <p><b>Rodeghero, P.</b>, McMillan, C., McBurney, P. W., Bosch, N., D’Mello, S., “Improving Au-
+                          tomated Source Code Summarization via an Eye-Tracking Study of Programmers”, in
+                          Proc. of 36th IEEE/ACM International Conference on Software Engineering (ICSE’14),
+                          Hyderabad, India, May 31-June 7 2014, 12 pages. (20% acceptance rate)
+                          <b style="color:red;">ACM SIGSOFT Distinguished Paper Award</b></p>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+        </div>
+      </section>
+
+
+      <section id="Advising" class="home-section wg-pages" style="background-color: #fff;">
+        <div class="container">
+          <div class="row">
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Advising and Mentoring</h1>
+      </div>
+      <div class="col-12 col-lg-8">
+    <div class="view-list-item">
+     <span class="funding-name">PhD Committee Chair</span>
+      <div class="article-metadata" itemprop="author">
+    <ul>
+      <li class="funding-price"><b>James Dominic, PhD,</b> Clemson University, School of Computing, Defended May 2024.</li>
+      <li class="funding-price"><b>Ella Kokinda, M.S.</b>, Clemson University, School of Computing, Jan. 2021-present</li>
+      <li class="funding-price"> <b>Makayla Moster, M.S.</b>, Clemson University, School of Computing, May 2020-Present</li>
+      </ul>
+      </div> 
+    </div>  
+
+    <div class="view-list-item">
+        <span class="funding-name">PhD Committee Member</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+            <li class="funding-price"><b>Heba Aly</b>, Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Aaron Gluck</b>, Clemson University, School of Computing</li>
+            <li class="funding-price"> <b>Earl Huff</b>, Clemson University, School of Computing</li>
+            <li class="funding-price"> <b>Aubrey Lawson,</b> Clemson University, School of Computing</li>
+            </ul>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Graduate Students Mentoring</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+          <li class="funding-price"><b>Shaurya Raghuvanshi</b></li>
+          <li class="funding-price"><b>Brock Tubre</b></li>
+          <li class="funding-price"><b>Shivam Shrichand Nahar</b> </li>
+          <li class="funding-price"><b>Raghavendra Niteesh Ganugapati</b></li>
+          <li class="funding-price"><b>Matthew Re</b></li>
+          </ul>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Undergraduate Students Mentoring</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+            <li class="funding-price"><b>Gabe Jenkins,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Andrew Edward Jensen,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Camren John Khoury,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Ivan W Lin,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Scott Alan Logan,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Bryan David Pisciotti,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>GJimmy L Tang,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Dhruv Gupta,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Sol H Lesesne,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>John Zarnowski,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Millon McLendon,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>H. David Gleaton, Clemson University,</b> School of Computing</li>
+            <li class="funding-price"> <b>Taylor Christina Le,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Christopher Jacob Broom,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Simon Chengyu Chu,</b> Carnegie Mellon University, School of Computing</li>
+            <li class="funding-price"><b>Ryon Vinay Peddapalli,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Veronica Pimenova,</b> Carnegie Mellon University, School of Computing</li>
+            <li class="funding-price"><b>Susan Li,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Yash Patel,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Rafael DeJesus,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Jada Houser,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Charles Ritter,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Colton Smith,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Abigail Shirey,</b> University of Notre Dame, Computer Science & Engineering</li>
+            <li class="funding-price"><b>Ethan Ellis,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Chris Camacho Jr.,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Joseph M Watkins,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Jeffrey Wang,</b> Clemson University, School of Computing</li>
+            <li class="funding-price"><b>Kellen Haas,</b> Clemson University, School of Computing</li>
+            </ul>
+         </div> 
+       </div>
+
+      </div>
+    </div>
+    
+        </div>
+      </section>
+
+
+      <section id="Teaching" class="home-section wg-pages">
+        <div class="container">
+          <div class="row">
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Teaching Experience</h1>
+      </div>
+      <div class="col-12 col-lg-8">
+    <div class="view-list-item">
+     <span class="funding-name">Clemson University, Clemson, South Carolina</span>
+      <div class="article-metadata" itemprop="author">
+        <ul>
+          <li class="funding-price"><b>CPSC 4720/6720</b> - Software Development Methodology (Spring 2020, Summer 2020,
+      Spring 2021, Spring 2022, Spring 2023, Spring 2024)</li>
+      <li class="funding-price"> <b>CPSC 8710</b> - Foundations of Software Engineering (Fall 2018, Fall 2020, Fall 2021, Fall
+      2023)</li>
+      <li class="funding-price"> <b>CPSC 8810</b> - Human Factors of Software Engineering (Spring 2021, Spring 2023)</li>
+      <li class="funding-price"><b>CPSC 3720</b> - Introduction to Software Engineering (Spring 2019, Fall 2021, Fall 2023)</li>
+      <li class="funding-price"> <b>CPSC 8880</b> - Directed Projects in Computer Science (Every semester as needed)</li>
+      <li class="funding-price"> <b>CPSC 8910</b> - Master’s Thesis Research (Every semester as needed)</li>
+      <li class="funding-price"> <b>CPSC 9910</b> - Doctoral Dissertation Research (Every semester as needed)</li>
+      <li class="funding-price"> <b>CPSC 8720</b> - Software Specification (Spring 2023)</li>
+      </ul>
+      </div> 
+    </div>  
+
+    <div class="view-list-item">
+        <span class="funding-name">University of Notre Dame, Notre Dame, Indiana</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+          <li class="funding-price"> <b>CS 40877</b> - Educational Game Design (2017)<br>– Instructor of Record, new course design</li>
+          <li class="funding-price"> <b>CS 40773</b> - Software Projects With Drones (2016)<br>– Guest Lecturer</li>
+          <li class="funding-price"> <b>CS 40497</b> - Information Web Sciences (2014)<br>– Teaching Assistant</li>
+          <li class="funding-price"> <b>CS 40424</b> - Human Computer Interaction (2013)<br>– Teaching Assistant</li>
+          </ul>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Ball State University, Muncie, Indiana</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+            <li class="funding-price"><b>Introduction to Computer Science</b> (2013)<br>– Lab Instructor</li>
+            </ul>
+         </div> 
+       </div>
+      </div>
+    </div>
+    
+        </div>
+      </section>
+
+
+      <section id="Professional" class="home-section wg-pages" style="background-color: #fff;">
+        <div class="container">
+          <div class="row">
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Professional Service</h1>
+      </div>
+      <div class="col-12 col-lg-8">
+    <div class="view-list-item">
+     <span class="funding-name">Steering Committee Service</span>
+      <div class="article-metadata" itemprop="author">
+      <ul><li class="funding-price">
+      Member International Working Conference on Source Code Analysis & Manipulation (2019-
+      2022)</li></ul>
+      </div> 
+    </div>  
+
+    <div class="view-list-item">
+        <span class="funding-name">Chair Service</span>
+         <div class="article-metadata" itemprop="author">
+    <ul><li class="funding-price">Program Co-Chair (RENE Track) IEEE International Conference on Software Maintenance
+        and Evolution (2022)</li>
+      <li class="funding-price">Program Co-Chair SEmotion (2021)</li>
+      <li class="funding-price">Program Co-Chair ACM Symposium on Eye Tracking Research & Applications (2019)</li>
+      <li class="funding-price">Program Co-Chair (Artifacts Track) IEEE International Conference on Software Maintenance and Evolution (2019)</li>
+      </ul>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Keynotes</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+          <li class="funding-price">Keynote Speaker, International Conference on Software Maintenance and Evolution (ICSME 2023), Bogotá, Colombia.</li>
+          <li class="funding-price">Keynote Speaker, Second International Workshop on Bots in Software Engineering (BotSE 2021), Madrid, Spain.</li>
+          </ul>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Committee Service</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+            <li class="funding-price">Program Committee</li>
+            <li class="funding-price">Program Committee IEEE/ACM International Conference on Software Engineering (2021, 2023, 2025)</li>
+            <li class="funding-price">Program Committee ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (2020)</li>
+            <li class="funding-price">Program Committee Mining Software Repositories (2020)</li>
+            <li class="funding-price">Program Committee Mining Software Repositories (2019)</li>
+            <li class="funding-price">Program Committee IEEE/ACM International Conference on Program Comprehension (2019)</li>
+            <li class="funding-price">Program Committee IEEE/ACM International Conference on Program Comprehension (2018)</li>
+            <li class="funding-price">Program Committee Mining Software Repositories Program Competition Track (2018)</li>
+            <li class="funding-price">Program Committee International Workshop on API Usage and Evolution (2018)</li>
+            <li class="funding-price">Organizing Committee, Publicity Chair and Social Media Chair for IEEE Source Code Analysis and Metrics (2018)</li>
+            <li class="funding-price">Program Committee IEEE International Conference on Software Maintenance and Evolution New Ideas and Emerging Results Track (2017)</li>
+            <li class="funding-price">Organizing Committee, Web Chair for IEEE Source Code Analysis and Metrics (2017)</li>
+            <li class="funding-price">Organizing Committee, Student Volunteer for IEEE International Conference on Software
+        Maintenance and Evolution (2016)</li>
+        </ul>
+         </div> 
+       </div>
+
+       <div class="view-list-item">
+        <span class="funding-name">Referee Service</span>
+         <div class="article-metadata" itemprop="author">
+          <ul>
+            <li class="funding-price">Journal Reviewer for Empirical Software Engineering (2018, 2021, 2022)</li>
+            <li class="funding-price">Journal Reviewer for Transactions on Software Engineering (2019, 2021, 2022)</li>
+            <li class="funding-price">Journal Reviewer for Journal of Systems and Software (2017, 2020, 2021, 2022)</li>
+            <li class="funding-price">Subreviewer for IEEE International Conference on Software Analysis, Evolution, and Reengineering Early Research Achievements Track (2016)</li>
+            <li class="funding-price">Reviewer for IEEE Transactions on Education (2015)</li>
+            <li class="funding-price">Subreviewer for IEEE International Conference on Program Comprehension (2015)</li>
+            </ul>
+         </div> 
+       </div>
+      </div>
+    </div>
+    
+        </div>
+      </section>
+
+
+      <section class="other-info">
+        <div class="container">
+          <div class="row">
+                <div class="col-md-12">
+                  <h2 class="section-title" style="color: #fff;">Other Information</h2>
+                </div>
+                <div class="col-md-12">
+                  <p class="btn-text"><a href="https://www.microsoft.com/en-us/research/group/developer-experience-lab/people/" style="color:#fff;">Collaborator for Microsoft’s Developer Experience Lab,</a> Volunteer for Be My Eyes</p>
+                </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Other content sections here... -->
+
+    <div id="contact" class="hidden">
+        <div class="bg-color-sky-light">
+            <div class="container content-lg">
+                <div class="row margin-b-40">
+                    <div class="col-sm-6">
+                        <h2>Contact Me</h2>
+                        <p>Feel free to reach out if you are interested in graduate school or collaborating.</p>
+                    </div>
+                </div>
+                <!--// end row -->
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <h4>Email</h4>
+                        <a href="mailto:#">prodegh@clemson.edu</a>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer hidden">
+        <div class="content container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <!-- <img class="footer-logo" src="img/logo.png" alt="Acecv Logo"> -->
+                </div>
+            </div>
+            <!--// end row -->
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+    <!-- CORE PLUGINS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="HTML/vendor/jquery.easing.js" type="text/javascript"></script>
+    <script src="HTML/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="HTML/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="HTML/vendor/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="HTML/vendor/jquery.parallax.min.js" type="text/javascript"></script>
+    <script src="HTML/vendor/jquery.appear.js" type="text/javascript"></script>
+    <script src="HTML/vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    <script src="HTML/js/layout.min.js" type="text/javascript"></script>
+    <script src="HTML/js/components/progress-bar.min.js" type="text/javascript"></script>
+    <script src="HTML/js/components/swiper.min.js" type="text/javascript"></script>
+    <script src="HTML/js/components/wow.min.js" type="text/javascript"></script>
+</body>
+</html>
