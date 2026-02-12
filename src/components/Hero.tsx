@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="lg:order-1 space-y-6 text-center lg:text-left flex-1">
               <div className="space-y-3 animate-fade-up">
                 <p className="text-accent font-medium tracking-wide uppercase text-sm">
-                  Associate Professor of Computer Science
+                  Associate Professor of Computer Science &amp; Dean's Professor
                 </p>
                 <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary leading-tight">
                   Paige Rodeghero, <span className="font-normal">PhD</span>
