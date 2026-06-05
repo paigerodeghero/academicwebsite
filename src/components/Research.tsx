@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 const researchAreas = [
   { name: "Software Engineering", featured: true },
   { name: "Developer Productivity", featured: true },
+  { name: "Future of Work", featured: true },
+  { name: "AI", featured: true },
   { name: "Program Comprehension", featured: true },
   { name: "Remote & Distributed Teams", featured: false },
   { name: "Developer Onboarding", featured: false },
