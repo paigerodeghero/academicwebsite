@@ -8,8 +8,8 @@ const researchAreas = [
   { name: "Program Comprehension", featured: true },
   { name: "Remote & Distributed Teams", featured: false },
   { name: "Developer Onboarding", featured: false },
-  { name: "Neurodiversity in Software Engineering", featured: true },
-  { name: "Empirical Methods", featured: false },
+  { name: "Neurodiversity in Software Engineering", featured: false },
+  { name: "Empirical Methods", featured: true },
   { name: "CS Education", featured: false },
 ];
 
