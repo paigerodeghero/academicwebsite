@@ -35,7 +35,7 @@ const About = () => {
             <p>
               I direct the{" "}
               <a
-                href="http://clemsonhfse.com/"
+                href="http://clemsondevlab.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-highlight hover:underline underline-offset-4 transition-colors font-medium"
