@@ -35,7 +35,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="http://clemsonhfse.com/"
+              href="http://clemsondevlab.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center gap-3 p-6 bg-primary-foreground/10 rounded-xl hover:bg-primary-foreground/15 transition-all group"
